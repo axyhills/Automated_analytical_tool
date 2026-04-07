@@ -114,7 +114,7 @@ Utility functions used across the project.
 
 ## Future Improvements
 
-- Support for Excel and database datasets
+- Support for SQL and database datasets
 - More statistical validation techniques
 - Improved graph ranking algorithms
 - Better AI insight generation
