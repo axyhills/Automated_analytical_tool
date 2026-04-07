@@ -11,7 +11,7 @@ from chatbot import chat as chatbot_chat
 
 # PAGE CONFIG
 
-st.set_page_config(page_title="Smart Visualization", layout="wide")
+st.set_page_config(page_title="Automated Data Analytics", layout="wide")
 
 
 # SESSION STATE INIT
@@ -169,7 +169,7 @@ def render_chart(fig):
 # HOME
 
 def show_home():
-    st.title("📊 Smart BI")
+    st.title("📊     Automated Data Analytics")
     st.subheader("📌 Dataset Overview")
 
     c1, c2 = st.columns(2)
@@ -413,51 +413,7 @@ def explore_section():
 
                 
 
-                # with st.expander("💬 Ask about this chart", expanded=False):
-                #     chat_key = f"chart_chat_{graph_key}"
-                #     if chat_key not in st.session_state:
-                #         st.session_state[chat_key] = []
-
-                #     # Display existing messages
-                #     for msg in st.session_state[chat_key]:
-                #         with st.chat_message(msg["role"]):
-                #             st.write(msg["content"])
-
-                #     # Input
-                #     user_q = st.chat_input(
-                #         "Ask something about this chart…",
-                #         key=f"chat_input_{graph_key}"
-                #     )
-                #     if user_q:
-                #         st.session_state[chat_key].append(
-                #             {"role": "user", "content": user_q}
-                #         )
-                #         with st.chat_message("user"):
-                #             st.write(user_q)
-
-                #         with st.chat_message("assistant"):
-                #             with st.spinner("Thinking…"):
-                #                 response = chatbot_chat(
-                #                     user_message=user_q,
-                #                     chat_history=st.session_state[chat_key][:-1],
-                #                     analysis_df=analysis_df,
-                #                     dataset_schema=dataset_schema,
-                #                     ranked_graphs=None,
-                #                     current_chart={
-                #                         "chart_id": selected_gt,
-                #                         "columns": g["columns"],
-                #                     },
-                #                 )
-                #             st.write(response)
-
-                #         st.session_state[chat_key].append(
-                #             {"role": "assistant", "content": response}
-                #         )
-
-                #     if st.session_state[chat_key]:
-                #         if st.button("🧹 Clear", key=f"clear_chart_chat_{graph_key}"):
-                #             st.session_state[chat_key] = []
-                #             st.rerun()
+                
         st.divider()
 
 
